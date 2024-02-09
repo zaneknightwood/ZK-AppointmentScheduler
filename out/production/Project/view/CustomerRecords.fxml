@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="359.0" prefWidth="1095.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerRecords">
+   <children>
+      <TableView fx:id="custTable" layoutX="14.0" layoutY="55.0" prefHeight="232.0" prefWidth="1063.0">
+        <columns>
+          <TableColumn fx:id="custIDCol" prefWidth="78.0" text="Customer ID" />
+          <TableColumn fx:id="custNameCol" prefWidth="201.0" text="Name" />
+            <TableColumn fx:id="custAddCol" prefWidth="178.0" text="Address" />
+            <TableColumn fx:id="custPostCol" prefWidth="81.0" text="Post Code" />
+            <TableColumn fx:id="custPhoneCol" prefWidth="127.0" text="Phone" />
+            <TableColumn fx:id="custDivIDCol" prefWidth="72.0" text="Division ID" />
+            <TableColumn fx:id="custCreateDateCol" prefWidth="78.0" text="Created Date" />
+            <TableColumn fx:id="custCreateByCol" prefWidth="67.0" text="Created By" />
+            <TableColumn fx:id="custLastUpdCol" prefWidth="77.0" text="Last Update" />
+            <TableColumn fx:id="custLastUpByCol" prefWidth="103.0" text="Last Updated By" />
+        </columns>
+      </TableView>
+      <Button fx:id="addCust" layoutX="14.0" layoutY="308.0" mnemonicParsing="false" onAction="#onAddCust" text="Add Customer" />
+      <Button fx:id="modCust" layoutX="126.0" layoutY="308.0" mnemonicParsing="false" onAction="#onModCust" text="Modify Customer" />
+      <Button fx:id="deleteCust" layoutX="251.0" layoutY="308.0" mnemonicParsing="false" onAction="#onDeleteCust" text="Delete Customer" />
+      <Button fx:id="backButton" layoutX="947.0" layoutY="321.0" mnemonicParsing="false" onAction="#onBackButton" text="Back to Appointments" />
+   </children>
+</AnchorPane>
